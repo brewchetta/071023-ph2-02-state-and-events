@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  text-align: center;
+  border: solid black 2px;
+  margin: 3em;
+}
+
+.supply-card {
+  margin: 1em;
+}
+
+.supply-card span {
+  margin-right: 1em;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+button {
+  border: solid orange 2px;
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 0.3em;
+  padding: 0.35em;
+  cursor: pointer;
+}
+
+button:active {
+  border-color: red;
+}
