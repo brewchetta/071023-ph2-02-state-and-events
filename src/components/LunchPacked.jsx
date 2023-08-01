@@ -1,7 +1,17 @@
+import { useState } from 'react'
+
 function LunchPacked() {
 
+  const [lunchPacked, setLunchPacked] = useState( false )
+
+  function toggleLunchPacked() {
+    setLunchPacked( !lunchPacked )
+  }
+
   return (
-    <button>Lunch Not Packed</button>
+    <button onClick={ toggleLunchPacked }>
+      { lunchPacked ? "Lunch is packed" : "Lunch is not packed OMG PACK YOUR LUNCH" }
+    </button>
   )
 
 }
